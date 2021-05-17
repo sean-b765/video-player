@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="./styles/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+		/>
+
+		<title>YT Player</title>
+	</head>
+	<body>
+		<div class="video-container">
+			<video>
+				<source src="./mp4/sample.mp4" />
+			</video>
+			<div class="controls">
+				<div class="pause-play square" id="pause-play">
+					<i class="fas fa-play"></i>
+				</div>
+				<div class="timestamp rect" id="timestamp"></div>
+				<div class="seek">
+					<div class="bar">
+						<div class="progress" id="progress"></div>
+					</div>
+				</div>
+				<div class="volume square" id="volume">
+					<div class="volume-popout">
+						<input type="range" id="volume-slide" orient="vertical" />
+					</div>
+					<div class="icon">
+						<i class="fas fa-volume-down"></i>
+					</div>
+				</div>
+				<div class="size-mode square" id="size-mode">
+					<i class="fas fa-expand"></i>
+				</div>
+			</div>
+		</div>
+
+		<script src="./scripts/app.js"></script>
+	</body>
+</html>
