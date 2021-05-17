@@ -21,6 +21,7 @@ body {
 	position: relative;
 	display: flex;
 	align-items: center;
+	max-height: 100vh;
 }
 
 video {
@@ -112,4 +113,13 @@ video {
 		#ff6a00,
 		#ee0979
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media screen and (max-width: 768px) {
+	#timestamp {
+		display: none;
+	}
+	:root {
+		--btn-size: 50px;
+	}
 }
